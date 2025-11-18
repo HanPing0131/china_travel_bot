@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>General China Travel Q&A</h2>
+
+<form method="post">
+    <label for="question">Ask any travel question about China:</label><br>
+    <textarea id="question" name="question" rows="4" cols="60">{{ question or "" }}</textarea><br>
+    <button type="submit">Ask</button>
+</form>
+
+{% if answer %}
+    <h3>Answer</h3>
+    <p>{{ answer }}</p>
+{% endif %}
+{% endblock %}
