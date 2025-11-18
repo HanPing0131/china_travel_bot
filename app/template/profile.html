@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Profile</h2>
+
+<p><strong>Name:</strong> {{ user.name }}</p>
+<p><strong>Email:</strong> {{ user.email }}</p>
+<p><strong>Nationality:</strong> {{ user.nationality or "N/A" }}</p>
+
+<h3>Travel Preferences</h3>
+<pre>{{ user.travel_preferences or "N/A" }}</pre>
+{% endblock %}

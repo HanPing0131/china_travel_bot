@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.flash {
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.flash.success {
+    background-color: #d4edda;
+}
+
+.flash.warning {
+    background-color: #fff3cd;
+}
+
+.flash.danger {
+    background-color: #f8d7da;
+}
+
+.flash.info {
+    background-color: #d1ecf1;
+}
